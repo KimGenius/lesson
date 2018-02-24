@@ -1,0 +1,9 @@
+body {
+    /*background-color: #000;*/
+}
+div{
+    position: relative;
+    width: 25%;
+    display: inline-block;
+    height: 50px;
+}
