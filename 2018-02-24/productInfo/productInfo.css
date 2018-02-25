@@ -1,0 +1,119 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    /*box-sizing 속성은 width와 height 속성에 padding, border와 같은 값을 포함할지 말지 여부*/
+    /*border-box: width와 height에 padding과 border 값을 포함하지 않음*/
+    /*content-box: 기본값인데 얘는 포함함 (그래서 예상치 못한 크기값을 얻을 수도 있다.)*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+}
+
+.table-version, .list-version {
+    position: relative;
+    display: inline-block;
+    flex: 1;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+/*.hi {*/
+    /*flex: 2*/
+/*}*/
+
+.wrap {
+    width: 80%;
+    display: flex;
+}
+
+/*table version css code*/
+table {
+    width: 100%;
+    /*table 사이사이 간격 없애기*/
+    border-collapse: collapse;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+table > tbody > tr {
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+}
+
+/*table 상,하단 선은 이렇게도 할 수 있음*/
+/*table > tbody > tr:first-of-type {*/
+/*border-top: 1px solid #aaa;*/
+/*}*/
+
+/*table > tbody > tr:last-of-type {*/
+/*border-bottom: 1px solid #aaa;*/
+/*}*/
+
+table > tbody > tr > td {
+    color: #555555;
+    border-left: 1px solid #f1f1f1;
+    font-size: .8rem;
+}
+
+table > tbody > tr > td:first-of-type {
+    background-color: #f7f7f7;
+    border-left: none;
+}
+
+/*list-version css code*/
+li {
+    list-style: none;
+    /*float: left;*/
+}
+
+ul {
+    height: 35px;
+}
+
+ul > li {
+    width: 150px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    color: #555555;
+    border-left: 1px solid #f1f1f1;
+    font-size: .8rem;
+}
+
+ul > li:first-of-type {
+    width: 85px;
+}
+
+ul > li:first-of-type {
+    background-color: #f7f7f7;
+    border-left: none;
+}
+
+ul:first-of-type {
+    border-top: 1px solid #aaa;
+}
+
+ul:last-of-type > li {
+    border-bottom: 1px solid #aaa;
+}
+
+/*description area css code*/
+.desc-area {
+    position: relative;
+    width: 40%;
+    margin-top: 30px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    color: #555555;
+    font-size: .8rem;
+}
