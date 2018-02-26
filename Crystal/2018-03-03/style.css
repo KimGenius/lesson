@@ -1,3 +1,30 @@
 * {
-  
+    margin: 0 auto;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.slide-wrap {
+    position: relative;
+    width: 60vw;
+    height: 90vh;
+    /*overflow: hidden;*/
+}
+
+.slide-wrap ul {
+    position: absolute;
+    width: 1000%;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.slide-wrap ul li {
+    width: 60vw;
+    float: left;
+    list-style: none;
 }
