@@ -13,6 +13,6 @@
 - [x] Product Info 따라 만들기
 
 ### 2018-03-03
-[임블리 쇼핑몰 슬라이드 만들기](http://imvely.com/product/detail.html?product_no=13883&cate_no=113&display_group=1)
-[예제](./Crystal/2018-03-03/slide-gif.mov)
+[임블리 쇼핑몰 슬라이드 만들기](http://imvely.com/product/detail.html?product_no=13883&cate_no=113&display_group=1)<br/>
+[결과 예제](./Crystal/2018-03-03/slide-gif.mov)
 
