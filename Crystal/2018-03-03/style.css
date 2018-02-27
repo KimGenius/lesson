@@ -48,5 +48,9 @@
     display: inline-block;
     border-radius: 100%;
     background-color: #e4c9a6;
+    cursor: pointer;
 }
 
+.slide-pointer-area > span:first-of-type {
+    background-color: #222222;
+}
