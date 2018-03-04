@@ -55,3 +55,35 @@
 .slide-pointer-area > span:first-of-type {
     background-color: #222222;
 }
+
+.arrow-wrap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.arrow-wrap img {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.arrow-wrap img:last-of-type {
+    right: 3%;
+}
+
+.slide-wrap:hover .arrow-wrap > img {
+    opacity: .5;
+}
+
+.arrow-wrap img:hover {
+    opacity: 1 !important;
+}
