@@ -27,4 +27,25 @@ $(function () {
       imageCount = 0
     }
   }
+
+  $('.slide-wrap img').click(function () {
+    if ($(this).attr('alt') === "left") {
+      imageCount--
+    } else {
+      imageCount++
+    }
+    if (imageCount < 0) {
+      imageCount = 4
+    }
+    if (imageCount > 4) {
+      imageCount = 0
+    }
+    $('.slide-wrap ul').css('left', imageCount * -60 + 'vw')
+    $('.slide-pointer-area > span').css('background-color', '#e4c9a6')
+    $('.slide-pointer-area > span:nth-of-type(' + (imageCount + 1) + ')').css('background-color', '#222222')
+    clearInterval(slideInterval)
+    slideInterval = setInterval(function () {
+      slideImage()
+    }, TIMER)
+  })
 })
